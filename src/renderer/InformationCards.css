@@ -1,0 +1,14 @@
+.informationCards {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    list-style: none;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.informationCards li {
+    width: 30vw;
+    background-color: #0000ff;
+    align: center;
+}
