@@ -4,11 +4,19 @@
     height: 90vh;
     list-style: none;
     justify-content: center;
+    gap: 2%;
+    margin-top: 5vh;
     /* align-items: center; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 3%;
 }
 
-.informationCards li {
+/* Apply to all information cards */
+.informationCards > li {
     width: 30vw;
-    background-color: #0000ff;
+    background-color: #f0f0f0;
     align: center;
+    overflow: auto;
 }

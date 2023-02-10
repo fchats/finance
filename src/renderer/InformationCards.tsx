@@ -7,12 +7,8 @@ export default function InformationCards() {
             <li>
                 <Wallets />
             </li>
-            <li>
-                { /* <Transactions /> */}
-            </li>
-            <li>
-                {/* <LastCard /> */}
-            </li>
+            <li>{/* <Transactions /> */}</li>
+            <li>{/* <LastCard /> */}</li>
         </ul>
-    )
-};
+    );
+}

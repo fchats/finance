@@ -1,0 +1,27 @@
+ul.walletCards {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    /* padding: 0;*/
+    padding-top: 5%;
+}
+
+ul.walletCards > li {
+    height: 150px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 10%;
+    background-color: red;
+    background-clip: content-box;
+    padding-left: 10%;
+}
+
+ul.walletCards:hover > li {
+    cursor: pointer;
+}
+ul.walletCards li li {
+    padding-left: 5%;
+    margin-bottom: 0%;
+}

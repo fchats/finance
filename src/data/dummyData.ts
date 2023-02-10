@@ -10,11 +10,29 @@ import { Wallet } from './Wallet';
  *   Quantity
  * }
  */
-let items: Item[] = [
-    new Item('FC Milk', 690, 'Milk', 2),
-    new Item('Barilla Pasta', 450, 'Pasta', 1),
-    new Item('Milo Flakes Cereal', 750, 'Cereal', 1),
-];
+
+const item1: Item = {
+    name: 'FC Milk',
+    total: 690,
+    category: 'Milk',
+    quantity: 2,
+};
+
+const item2: Item = {
+    name: 'Barilla Pasta',
+    total: 450,
+    category: 'Pasta',
+    quantity: 1,
+};
+
+const item3: Item = {
+    name: 'Milo Flakes Cereal',
+    total: 750,
+    category: 'Cereal',
+    quantity: 1,
+};
+
+let items: Item[] = [item1, item2, item3];
 
 /*
  * Transaction {
@@ -24,9 +42,14 @@ let items: Item[] = [
  * Date
  * }
  */
-let transactions: Transaction[] = [
-    new Transaction('Grocery Shop', 690 + 450 + 750, 'Grocery', items),
-];
+const transaction1: Transaction = {
+    name: 'Grocery Shop',
+    total: 690 + 450 + 750,
+    category: 'Grocery',
+    items,
+    timeCreated: new Date(),
+};
+const transactions: Transaction[] = [transaction1];
 
 /*
  * Wallet {
@@ -36,4 +59,39 @@ let transactions: Transaction[] = [
  * TimeCreated
  * }
  */
-export let wallet1 = new Wallet("Wallet 1", 20000, transactions);
+let wallet1: Wallet = {
+    name: 'Wallet 1',
+    balance: 20000,
+    transactions: transactions,
+    timeCreated: new Date(),
+};
+
+let wallet2: Wallet = {
+    name: 'Wallet 2',
+    balance: 10000,
+    transactions: transactions,
+    timeCreated: new Date(),
+};
+
+let wallet3: Wallet = {
+    name: 'Wallet 3',
+    balance: 10412,
+    transactions: transactions,
+    timeCreated: new Date(),
+};
+
+let wallet4: Wallet = {
+    name: 'Wallet 4',
+    balance: 0,
+    transactions: transactions,
+    timeCreated: new Date(),
+};
+
+let wallet5: Wallet = {
+    name: 'Wallet 5',
+    balance: 0,
+    transactions: transactions,
+    timeCreated: new Date(),
+};
+
+export let wallets = [wallet1, wallet2, wallet3, wallet4, wallet5];

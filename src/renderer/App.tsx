@@ -2,6 +2,8 @@ import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import InformationCards from './InformationCards';
 
+
+
 const Main = () => {
     return (
         <div className="main">
