@@ -1,26 +1,25 @@
-import { wallets } from '../data/dummyData';
-
-import WalletCard from './WalletCard';
+import React from 'react';
 import './Wallets.css';
 
-export default function Wallets() {
-    console.log(wallets[0].name);
-    console.log(wallets[0].balance);
-    console.log(wallets[0].transactions);
-    console.log(wallets[0].timeCreated);
+export interface WalletCardProps {
+    wallets: React.ReactNode[];
+}
+
+export default function WalletCards(props: WalletCardProps) {
+    /*
     let cards = wallets.map((elem) => (
         <li className="wCard">
             <WalletCard wallet={elem} />
         </li>
     ));
-    let selected: number = 0;
+    */
+
+    let wallets = props.wallets;
 
     return (
         <div className="wallets">
             <h1 className="cardTitle">Wallets</h1>
-            <ul className={selected ? 'walletCards selected' : 'walletCards'}>
-                {cards}
-            </ul>
+            <ul className="walletCards">{wallets}</ul>
         </div>
     );
 }

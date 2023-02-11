@@ -13,7 +13,6 @@ ul.walletCards > li {
     width: 90%;
     position: relative;
     margin-bottom: 10%;
-    background-color: red;
     background-clip: content-box;
     padding-left: 10%;
 }
@@ -24,4 +23,11 @@ ul.walletCards:hover > li {
 ul.walletCards li li {
     padding-left: 5%;
     margin-bottom: 0%;
+}
+
+.unselected {
+    background-color: red;
+}
+.selected {
+    background-color: green;
 }

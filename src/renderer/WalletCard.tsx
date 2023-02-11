@@ -7,7 +7,6 @@ interface WalletProps {
 
 export default function WalletCard(props: WalletProps) {
     let wallet = props.wallet;
-    console.log('wallet.name = ' + wallet.name);
     return (
         <ul className="walletCard">
             <li>{wallet.name}</li>
